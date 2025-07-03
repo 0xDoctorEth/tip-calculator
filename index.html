@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="logo"><img src="/images/logo.svg" alt="Logo" /></header>
+
+      <div class="calculator">
+        <form class="calculator-form">
+          <div class="bill-field">
+            <label class="info">Bill</label>
+
+            <div class="input-container">
+              <input
+                type="number"
+                placeholder="0"
+                class="calculator-input"
+                id="bill-input"
+              />
+              <img class="input-img" src="/images/icon-dollar.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="tips-field">
+            <label class="tip">Select Tip %</label>
+
+            <div class="tip-option">
+              <label class="radio-container">
+                <span class="percentage">5%</span>
+                <input type="radio" class="calculator-radio" />
+              </label>
+
+              <label class="radio-container">
+                <span class="percentage">10%</span>
+                <input type="radio" name="" id="" class="calculator-radio" />
+              </label>
+
+              <label class="radio-container">
+                <span class="percentage">15%</span>
+                <input type="radio" name="" id="" class="calculator-radio" />
+              </label>
+
+              <label class="radio-container">
+                <span class="percentage">25%</span>
+                <input type="radio" name="" id="" class="calculator-radio" />
+              </label>
+
+              <label class="radio-container">
+                <span class="percentage">50%</span>
+                <input type="radio" name="" id="" class="calculator-radio" />
+              </label>
+
+              <input type="number" class="custom" placeholder="Custom" />
+            </div>
+          </div>
+
+          <div class="people">
+            <label class="info">Number of People</label>
+            <span class="error-msg">Can't be zero</span>
+
+            <div class="input-container">
+              <input
+                type="number"
+                class="calculator-input"
+                id="people-input"
+                placeholder="0"
+              />
+              <img class="input-img" src="/images/icon-person.svg" alt="" />
+            </div>
+          </div>
+        </form>
+
+        <div class="result">
+          <div class="calculator__display-value-container">
+            <div class="calculator__display-field">
+              <p class="calculator__display-type">
+                Tip Amount
+                <span class="person">/ person</span>
+              </p>
+              <p class="calculator__display-value" id="tip-amount">$0.00</p>
+            </div>
+
+            <div class="calculator__display-field">
+              <p class="calculator__display-type">
+                Total
+                <span class="person">/ person</span>
+              </p>
+              <p class="calculator__display-value" id="total-amount">$0.00</p>
+            </div>
+          </div>
+
+          <button class="reset-btn">Reset</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
